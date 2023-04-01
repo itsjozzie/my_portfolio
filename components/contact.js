@@ -8,6 +8,7 @@ import Link from 'next/link'
 import React from 'react'
 import emailjs from '@emailjs/browser';
 import  { useRef } from 'react';
+import ContactImg from '../public/images/contact.jpg'
 
 const contact = () => {
 
@@ -46,13 +47,14 @@ const contact = () => {
                 
                 <div className='col-span-3 lg:col-span-2 w-full h-full shadow-2xl shadow-gray-400 rounded-2xl p-4'>
                     <div className='lg:p-4 h-full'>
-                        <div>
-                            <Image className='rounded-2xl hover:scale-105 ease-in duration-300'
-                             src="/../public/images/contact.jpg"
-                             alt="/" 
-                             width='1240'
-                             height='1249'
+
+                        <div >
+                            <Image 
+                             className='rounded-2xl hover:scale-105 ease-in duration-300 h-310 w-310'
+                             src={ContactImg} 
+                             alt="" 
                              />
+
                         </div>
                         <div>
                             <h2 className='py-2'>Joseph Maguguli</h2>

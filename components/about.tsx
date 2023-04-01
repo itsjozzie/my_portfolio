@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion'
+import HeroImage from '../public/images/4.jpg'
 
 type Props = {}
 
@@ -38,10 +39,10 @@ export default function about({}: Props) {
         
       </div>
       <div className=' shadow-2xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <Image className='rounded-full'
-            src='/../public/images/4.jpg' alt='' 
-            width='1240' 
-            height='1240' 
+      <Image
+            className=' rounded-full h-310 w-310'
+            src={HeroImage} 
+            alt={''}
             />
       </div>
      </div>

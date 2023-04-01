@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import HeroImage from '../public/images/logo.jpg'
 
 type Props = {}
 
@@ -44,10 +45,11 @@ export default function navbar({}: Props) {
             {/* logo */}
 
            <Link href='/'>
-                  <Image className='rounded-full'
-                    src='/../public/images/logo.jpg' alt='' 
-                    width='70' 
-                    height='70' 
+                  <Image 
+                    className='rounded-full h-20 w-20'
+                    src={HeroImage} 
+                    alt='/' 
+                     
                     />
            
            </Link>
@@ -87,10 +89,11 @@ export default function navbar({}: Props) {
                 <div>
                     {/* logo */}
                     <div className='flex w-full justify-between items-center'>
-                        <Image className='rounded-full'
-                        src='/../public/images/logo.jpg' alt='' 
-                        width='64' 
-                        height='64'
+                        <Image 
+                        className='rounded-full h-16 w-16'
+                        src={HeroImage} 
+                        alt='/' 
+                        
                         />
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                             <AiOutlineClose/>
