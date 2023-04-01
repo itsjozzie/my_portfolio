@@ -36,7 +36,7 @@ const contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen md:h-screen p-2 flex items-center py-16 '>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-ful'>
-            <p className='uppercase text-2xl tracking-[20px] text-gray-500'>
+            <p className='uppercase text-xl tracking-[10px] text-gray-500'>
                 Contact me
             </p>
             <h2 className='py-4'>
@@ -45,12 +45,12 @@ const contact = () => {
             <div className='grid lg:grid-cols-5 gap-8'>
                 {/* left */}
                 
-                <div className='col-span-3 lg:col-span-2 w-full h-full shadow-2xl shadow-gray-400 rounded-2xl p-4'>
+                <div className='col-span-3 lg:col-span-2 w-full h-full rounded-2xl p-4'>
                     <div className='lg:p-4 h-full'>
 
                         <div >
                             <Image 
-                             className='rounded-2xl hover:scale-105 ease-in duration-300 h-310 w-310'
+                             className='rounded-2xl h-310 w-310'
                              src={ContactImg} 
                              alt="" 
                              />

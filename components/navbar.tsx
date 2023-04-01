@@ -40,7 +40,7 @@ export default function navbar({}: Props) {
                  }>
         
         {/* normal navbar */}
-        <div className='flex justify-between text-center w-full h-full px-2 2xl:px-16'>
+        <div className='flex justify-between text-center w-full h-full px-5 md:px-10 2xl:px-16'>
             
             {/* logo */}
 
@@ -59,19 +59,19 @@ export default function navbar({}: Props) {
             <div>
                 <ul className='hidden md:flex pt-7'>
                     <Link href='/'>
-                        <li className='ml-10 text-sm uppercase hover:border-b '>home</li>
+                        <li className='ml-10 text-sm capitalize hover:border-b '>home</li>
                     </Link>
                     <Link href='/#about'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>about</li>
+                        <li className='ml-10 text-sm capitalize hover:border-b'>about</li>
                     </Link>
                     <Link href='/#skills'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>skills</li>
+                        <li className='ml-10 text-sm capitalize hover:border-b'>skills</li>
                     </Link>
                     <Link href='/#services'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Services</li>
+                        <li className='ml-10 text-sm capitalize hover:border-b'>Services</li>
                     </Link>
                     <Link href='/#contact'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>contact</li>
+                        <li className='ml-10 text-sm capitalize hover:border-b'>contact</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden pt-7 cursor-pointer' >

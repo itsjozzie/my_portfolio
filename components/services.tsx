@@ -10,15 +10,15 @@ export default function services({}: Props) {
   return (
     <div id='services' className='md:h-screen p-2 flex items-center py-16 '>
       <div className='max-w-[1240px] mx-auto m-auto px-2 py-16 '>
-            <p className='uppercase text-2xl tracking-[20px] text-gray-500'>
+            <p className='uppercase text-xl tracking-[10px] text-gray-500'>
                 Services
             </p>
-            <h2 className='py-4'>
-                What I Offer
+            <h2 className='py-4 capitalize'>
+                What I offer
                 
             </h2>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 h-auto'>
-              <div className='grid grid-cols-2 p-6 shadow-2xl rounded-xl hover:scale-105 ease-in duration-300 items-center justify-center gap-8'>
+              <div className='grid grid-cols-2 p-6 border-2 border-blue-200 rounded-xl hover:scale-105 ease-in duration-300 items-center justify-center gap-8'>
 
                 <div className='m-auto h-310 w-310'>
                   <Image src={WebImg} alt="" />
@@ -29,7 +29,7 @@ export default function services({}: Props) {
 
               </div>
 
-              <div className='grid grid-cols-2 p-6 shadow-2xl rounded-xl hover:scale-105 ease-in duration-300 items-center justify-center gap-8'>
+              <div className='grid grid-cols-2 p-6 border-2 border-blue-200 rounded-xl hover:scale-105 ease-in duration-300 items-center justify-center gap-8'>
                 <div className='m-auto h-310 w-310'>
                   <Image src={AppImg} alt="" />
                 </div>
@@ -38,7 +38,7 @@ export default function services({}: Props) {
                 </div>
               </div>
 
-              <div className='grid grid-cols-2 p-6 shadow-2xl rounded-xl hover:scale-105 ease-in duration-300 items-center justify-center gap-8'>
+              <div className='grid grid-cols-2 p-6 border-2 border-blue-200 rounded-xl hover:scale-105 ease-in duration-300 items-center justify-center gap-8'>
                 <div className='m-auto h-310 w-310'>
                   <Image src={GraphicImg} alt="" />
                 </div>
