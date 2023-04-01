@@ -8,15 +8,15 @@ type Props = {}
 
 export default function about({}: Props) {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16 '>
+    <div id='about' className='w-full md:h-screen px-5 md:px-10 2xl:px-16 flex items-center py-16 '>
      <div className='max-w-[1240px] m-auto md:grid  grid-cols-3 gap-8 ml-2  px-2 py-16 w-ful'>
       
       <div className='col-span-2'>
-        <p className='uppercase text-2xl tracking-[20px] text-gray-500'>
+        <p className='uppercase text-xl tracking-[10px] text-gray-500'>
           about me
         </p>
-        <h2 className='py-4'>
-          Who I am
+        <h2 className='py-3'>
+          Who am I
         </h2>
         <p className='py-2 text-gray-700'>
           I am a Software Developer from Tanzania.
@@ -25,7 +25,7 @@ export default function about({}: Props) {
           I have earned experience in:
         </p>
         
-        <ul className=''>
+        <ul className='pb-5'>
           <li className='list-disc ml-10'>Web Development</li>
           <li className='list-disc ml-10'>Mobile Development</li>
           <li className='list-disc ml-10'>Graphic Design</li>
@@ -38,9 +38,10 @@ export default function about({}: Props) {
         
         
       </div>
-      <div className=' shadow-2xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+      <div className='flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
       <Image
-            className=' rounded-full h-310 w-310'
+      // I have a suggestion here, don't use a full image, use a cropped image
+            className=' rounded-2xl h-310 w-310'
             src={HeroImage} 
             alt={''}
             />
